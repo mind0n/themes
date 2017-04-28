@@ -1,0 +1,35 @@
+{
+  "name": "wo-themes",
+  "version": "1.0.10",
+  "description": "Widget Online Foundation",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp && npm run watch",
+    "watch": " concurrently \"gulp watch\" "
+  },
+  "keywords": [
+    "Widget",
+    "Online",
+    "Foundation",
+    "Themes"
+  ],
+  "author": "mind0n",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^0.14.50",
+    "@types/react-dom": "^0.14.19",
+    "concurrently": "^3.1.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-svg-symbols": "^2.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webserver": "^0.9.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "run-sequence": "^1.2.2"
+  }
+}
