@@ -2,3 +2,12 @@
 @import "common/_reset.scss";
 @import "common/_definition.scss";
 @import "common/_layout.scss";
+
+$font-color: #333;
+
+body#{$root}.nb, #{$root} body.nb{
+    background: radial-gradient( #fff, #ddd); /* Standard syntax */        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:$font-color;
+}
