@@ -5,12 +5,12 @@ var mcss        =   require("gulp-clean-css");
 gulp.task("default", function () {
     return gulp.src('./src/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task("prod", function () {
     return gulp.src('./src/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(mcss({compatibility:"ie8"}))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./dist/css'));
 });

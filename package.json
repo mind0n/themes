@@ -4,8 +4,8 @@
   "description": "Widget Online Foundation",
   "main": "index.js",
   "scripts": {
-    "start": "gulp && npm run watch",
-    "watch": " concurrently \"gulp watch\" "
+    "start": "gulp default host watch:html watch:css"
+    , "watch": " concurrently \"gulp watch\" "
   },
   "keywords": [
     "Widget",
@@ -23,9 +23,12 @@
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.13",
     "gulp-concat": "^2.6.1",
+    "gulp-iconfont": "^8.0.1",
+    "gulp-iconfont-css": "^2.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-shell": "^0.5.2",
-    "gulp-svg-symbols": "^2.0.2",
+    "gulp-svg-sprites": "^4.1.1",
+    "gulp-task-register": "^1.1.9",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1",
     "react": "^15.4.1",
