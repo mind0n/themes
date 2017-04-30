@@ -3,11 +3,8 @@
 @import "common/_definition.scss";
 @import "common/_layout.scss";
 
-$font-color: #eee;
+$font-color: #ddd;
+$bg-color-start:#5291BB;
+$bg-color-end:#29517c;
 
-body#{$root}.nb, #{$root} body.nb{
-    background: radial-gradient( #5291BB, #29517c); /* Standard syntax */        
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color:$font-color;
-}
+@import "common/_theme.scss";

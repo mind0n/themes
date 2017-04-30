@@ -4,10 +4,7 @@
 @import "common/_layout.scss";
 
 $font-color: #333;
+$bg-color-start:#fff;
+$bg-color-end:#eee;
 
-body#{$root}.nb, #{$root} body.nb{
-    background: radial-gradient( #fff, #ddd); /* Standard syntax */        
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color:$font-color;
-}
+@import "common/_theme.scss";

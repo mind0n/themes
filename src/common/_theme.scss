@@ -1,0 +1,13 @@
+body#{$root}.nb, #{$root} body.nb{
+    background: radial-gradient( $bg-color-start, $bg-color-end); /* Standard syntax */        
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:$font-color;
+}
+
+
+#{$root}.nb, #{$root} .nb{
+    svg, svg *{
+        stroke: $font-color;
+    }
+}
