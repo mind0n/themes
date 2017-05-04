@@ -1,10 +1,8 @@
 // wo style entry point
-@import "common/_reset.scss";
-@import "common/_definition.scss";
-@import "common/_layout.scss";
-
+$theme: nb;
 $font-color: #ddd;
 $bg-color-start:#5291BB;
 $bg-color-end:#29517c;
+$bg-color-solid:#3D709A;
 
 @import "common/_theme.scss";

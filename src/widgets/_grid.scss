@@ -1,0 +1,51 @@
+#{$root}.#{$theme}, #{$root} .#{$theme}{
+    .w-grid{
+        position: relative;
+        overflow: auto;
+        border:solid 1px $font-color;
+    }
+    .w-grid .w-body{
+        overflow: visible;
+        margin-top:32px;
+    }
+    .w-grid .w-head.w-row{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        background-color: $bg-color-solid;
+    }
+    .w-grid .w-head.w-row .w-cell{
+        height:$unit * 5;
+        line-height: $unit * 5;
+        padding:0 $unit*2 0 $unit;
+    }
+    .w-grid .w-row{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .w-grid .w-row .w-cell{
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:100px;
+        white-space: normal;
+        word-break:break-all;
+
+        padding:6px;
+    }
+    .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
+
+        flex-shrink:1;
+        text-overflow: ellipsis;
+    }
+    .w-grid .w-row:nth-of-type(2n){
+        background-color: $bg-color-solid;
+    }
+}

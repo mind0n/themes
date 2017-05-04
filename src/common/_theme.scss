@@ -1,13 +1,18 @@
-body#{$root}.nb, #{$root} body.nb{
+@import "_reset.scss";
+@import "_definition.scss";
+@import "_layout.scss";
+
+body#{$root}.#{$theme}, #{$root} body.#{$theme}{
     background: radial-gradient( $bg-color-start, $bg-color-end); /* Standard syntax */        
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:$font-color;
 }
 
-
-#{$root}.nb, #{$root} .nb{
+#{$root}.#{$theme}, #{$root} .#{$theme}{
     svg, svg *{
         stroke: $font-color;
     }
 }
+
+@import "../widgets/_grid.scss";

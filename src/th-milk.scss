@@ -1,10 +1,8 @@
 // wo style entry point
-@import "common/_reset.scss";
-@import "common/_definition.scss";
-@import "common/_layout.scss";
-
+$theme: milk;
 $font-color: #333;
 $bg-color-start:#fff;
 $bg-color-end:#eee;
+$bg-color-solid:#ddd;
 
 @import "common/_theme.scss";
