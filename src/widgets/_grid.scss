@@ -2,7 +2,7 @@
     .w-grid{
         position: relative;
         overflow: auto;
-        border:solid 1px $font-color;
+        border:solid 1px $fg-color;
     }
     .w-grid .w-body{
         overflow: visible;
@@ -27,6 +27,8 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+
+        border-bottom:solid 1px $fg-color;
     }
     .w-grid .w-row .w-cell{
         flex-grow:1;
@@ -44,6 +46,9 @@
 
         flex-shrink:1;
         text-overflow: ellipsis;
+    }
+    .w-grid .w-row:nth-last-of-type(1){
+        border:solid 1px transparent;
     }
     .w-grid .w-row:nth-of-type(2n){
         background-color: $bg-color-solid;
