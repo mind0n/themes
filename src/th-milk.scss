@@ -1,9 +1,15 @@
 // wo style entry point
 $theme: milk;
+$bd-color: #bbb;
+
 $font-color: #333;
-$fg-color: #bbb;
+$fg-primary-color: #fff !important;
+
 $bg-color-start:#fff;
 $bg-color-end:#eee;
 $bg-color-solid:#ddd;
 
+$bg-default-color:#ccc;
+$bg-primary-color:#268BD2;
+$bg-primary-active-color:#18699B;
 @import "common/_theme.scss";

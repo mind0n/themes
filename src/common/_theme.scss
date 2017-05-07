@@ -13,6 +13,33 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
     svg, svg *{
         stroke: $font-color;
     }
+    .w-holder{
+        display:inline-block;
+        border:none;
+        margin:0;
+        padding:0;
+    }
+    .w-default{
+        color:$font-color;
+        background-color: $bg-default-color;
+    }
+    .w-primary{
+        background-color:$bg-primary-color;
+        color:$fg-primary-color;
+    }
+    .w-primary:hover{
+        background-color:$bg-primary-active-color;
+        color:$fg-primary-color;
+    }
+    .w-primary:active{
+        @extend .w-default;
+    }
+
+    .w-link-btn button{
+        border:none !important;
+        background-color: transparent !important;
+    }
 }
 
+@import "../widgets/_basic.scss";
 @import "../widgets/_grid.scss";

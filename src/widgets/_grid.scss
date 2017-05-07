@@ -2,55 +2,64 @@
     .w-grid{
         position: relative;
         overflow: auto;
-        border:solid 1px $fg-color;
-    }
-    .w-grid .w-body{
-        overflow: visible;
-        margin-top:32px;
-    }
-    .w-grid .w-head.w-row{
-        position: absolute;
-        top:0;
-        left:0;
-        right:0;
-        background-color: $bg-color-solid;
-    }
-    .w-grid .w-head.w-row .w-cell{
-        height:$unit * 5;
-        line-height: $unit * 5;
-        padding:0 $unit*2 0 $unit;
-    }
-    .w-grid .w-row{
-        display: flex;
-        flex-direction:row;
-        flex-wrap:nowrap;
-        justify-content: flex-start;
-        align-items: stretch;
-        align-content: stretch;
+        border:solid 1px $bd-color;
+        .w-body{
+            overflow: visible;
+            margin-top:32px;
+        }
+        .w-head.w-row{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            background-color: $bg-color-solid;
 
-        border-bottom:solid 1px $fg-color;
-    }
-    .w-grid .w-row .w-cell{
-        flex-grow:1;
-        flex-shrink:1;
-        flex-basis:100px;
-        white-space: normal;
-        word-break:break-all;
+            .w-cell{
+                height:$unit * 5;
+                line-height: $unit * 5;
+                padding:0 $unit*2 0 $unit;
+            }
 
-        padding:6px;
-    }
-    .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
-        word-break: keep-all;
-        white-space: nowrap;
-        overflow: hidden;
+        }
+        .w-row{
+            display: flex;
+            flex-direction:row;
+            flex-wrap:nowrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
 
-        flex-shrink:1;
-        text-overflow: ellipsis;
-    }
-    .w-grid .w-row:nth-last-of-type(1){
-        border:solid 1px transparent;
-    }
-    .w-grid .w-row:nth-of-type(2n){
-        background-color: $bg-color-solid;
+            border-bottom:solid 1px $bd-color;
+
+            .w-cell{
+                flex-grow:1;
+                flex-shrink:1;
+                flex-basis:100px;
+                white-space: normal;
+                word-break:break-all;
+
+                padding:6px;
+            }
+        }
+        .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+
+            flex-shrink:1;
+            text-overflow: ellipsis;
+        }
+        .w-row:nth-last-of-type(1){
+            border:solid 1px transparent;
+        }
+        .w-row:nth-of-type(2n){
+            background-color: $bg-color-solid;
+        }
+
+        button{
+            padding:$unit;
+            margin:$unit / 3;
+            border:none;
+        }
     }
 }

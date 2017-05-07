@@ -1,9 +1,16 @@
 // wo style entry point
 $theme: nb;
+$bd-color:#bbb;
+
 $font-color: #ddd;
-$fg-color:#bbb;
+$fg-primary-color: #fff;
+
 $bg-color-start:#5291BB;
 $bg-color-end:#29517c;
 $bg-color-solid:#3D709A;
+
+$bg-default-color:#415262;
+$bg-primary-color:#268BD2;
+$bg-primary-active-color:#18699B;
 
 @import "common/_theme.scss";

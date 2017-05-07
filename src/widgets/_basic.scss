@@ -1,0 +1,19 @@
+
+
+#{$root}.#{$theme}, #{$root} .#{$theme}{
+    button{
+        cursor:pointer;
+        padding:$unit $unit*2 $unit $unit*2;
+        border:solid 1px $bd-color;
+        border-radius:$unit * 0;
+        color:$font-color;
+        background-color: $bg-default-color;
+    }
+    button:hover{
+        @extend .w-primary;
+    }
+    button:active{
+        background-color:$bg-primary-active-color;
+    }
+}
+
