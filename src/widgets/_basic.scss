@@ -4,16 +4,16 @@
     button{
         cursor:pointer;
         padding:$unit $unit*2 $unit $unit*2;
-        border:solid 1px $bd-color;
-        border-radius:$unit * 0;
+        border:solid 0px $bd-color;
+        border-radius:$radius;
         color:$font-color;
         background-color: $bg-default-color;
     }
     button:hover{
-        @extend .w-primary;
+        background-color: $bg-default-hover-color;
     }
     button:active{
-        background-color:$bg-primary-active-color;
+        background-color:$bg-default-active-color;
     }
 }
 

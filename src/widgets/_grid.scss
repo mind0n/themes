@@ -61,5 +61,8 @@
             margin:$unit / 3;
             border:none;
         }
+        button:hover{
+            outline: solid 1px silver;
+        }
     }
 }
