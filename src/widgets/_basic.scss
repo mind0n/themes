@@ -2,6 +2,7 @@
 
 #{$root}.#{$theme}, #{$root} .#{$theme}{
     button{
+        @extend .noselect;
         cursor:pointer;
         padding:$unit $unit*2 $unit $unit*2;
         border:solid 0px $bd-color;
