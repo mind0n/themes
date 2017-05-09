@@ -7,19 +7,62 @@
             overflow: visible;
             margin-top:32px;
         }
-        .w-head.w-row{
+        .w-cell{
+            position: relative;
+        }
+        .w-sort{
+            position: relative;
+            display:none;
+            left:0;
+            top:0;
+            width:20px;
+            height:20px;
+            svg{
+                width:100%;
+                height:100%;
+            }
+            .icon-sort-up{
+                display:none;
+            }
+            .icon-sort-down{
+                display:none;
+            }
+        }
+        .w-head.w-row:nth-last-of-type(1){
             position: absolute;
             top:0;
             left:0;
             right:0;
             background-color: $bg-color-solid;
-
+            border-bottom:solid 1px $bd-color;
             .w-cell{
                 height:$unit * 5;
                 line-height: $unit * 5;
-                padding:0 $unit*2 0 $unit;
+                padding:0 $unit 0 $unit;
+                cursor:default;
             }
-
+            .w-cell.w-asc{
+                .w-sort{
+                    display:inline-block;
+                    .icon-sort-up{
+                        display:inherit;
+                    }
+                    .icon-sort-down{
+                        display:none;
+                    }
+                }
+            }
+            .w-cell.w-desc{
+                .w-sort{
+                    display:inline-block;
+                    .icon-sort-up{
+                        display:none;
+                    }
+                    .icon-sort-down{
+                        display:inherit;
+                    }
+                }
+            }
         }
         .w-row{
             display: flex;
@@ -28,8 +71,6 @@
             justify-content: flex-start;
             align-items: stretch;
             align-content: stretch;
-
-            border-bottom:solid 1px $bd-color;
 
             .w-cell{
                 flex-grow:1;
@@ -40,6 +81,14 @@
 
                 padding:6px;
             }
+        }
+        .w-nowrap{
+            word-break: keep-all;
+            white-space: nowrap;
+            overflow: hidden;
+
+            flex-shrink:1;
+            text-overflow: ellipsis;
         }
         .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
             word-break: keep-all;
@@ -55,7 +104,6 @@
         .w-row:nth-of-type(2n){
             background-color: $bg-color-solid;
         }
-
         button{
             padding:$unit;
             margin:$unit / 3;

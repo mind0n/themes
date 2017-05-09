@@ -13,6 +13,8 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
 #{$root}.#{$theme}, #{$root} .#{$theme}{
     svg, svg *{
         stroke: $font-color;
+        width:32px;
+        height:32px;
     }
     .noselect {
         -webkit-touch-callout: none; /* iOS Safari */
@@ -21,6 +23,9 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         -moz-user-select: none; /* Firefox */
         -ms-user-select: none; /* Internet Explorer/Edge */
         user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+    }
+    .w-hidden{
+        display:none;
     }
     .w-holder{
         display:inline-block;
