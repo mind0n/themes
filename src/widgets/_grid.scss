@@ -1,15 +1,42 @@
 #{$root}.#{$theme}, #{$root} .#{$theme}{
+    .w-flex-row{
+        display: flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .w-flex-col{
+        display: flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        justify-content:flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    .w-flex-item{
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:50px;
+    }
+    .w-flex-col-item{
+        flex-grow:1;
+        flex-shrink:1;
+    }
+
     .w-grid{
         position: relative;
         overflow: hidden;
         border:solid 1px $bd-color;
         .w-body{
-            overflow: auto;
-            position: absolute;
-            left:0;
-            top:31px;
-            right:0;
-            bottom:0;
+            overflow-x: auto;
+            overflow-y: scroll;
+            // position: absolute;
+            // left:0;
+            // top:31px;
+            // right:0;
+            // bottom:0;
             .w-row:nth-last-of-type(1){
                 border-bottom:solid 0px transparent;
             }
@@ -40,6 +67,14 @@
             }
             .icon-sort-down{
                 display:none;
+            }
+        }
+        .w-head{
+            flex-grow:1;
+            flex-shrink:0;
+            flex-basis:30px;
+            .w-cell{
+                border-bottom: solid 0px $bd-color;
             }
         }
         .w-head.w-row:nth-of-type(1){
@@ -101,7 +136,6 @@
             white-space: nowrap;
             overflow: hidden;
 
-            flex-shrink:1;
             text-overflow: ellipsis;
         }
         .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
