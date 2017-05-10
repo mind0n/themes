@@ -35,6 +35,7 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
     }
     .w-title{
         font:$font-title;
+        line-height: $unit * 3;
         margin-bottom: $unit*3;
     }
     .w-widget{
