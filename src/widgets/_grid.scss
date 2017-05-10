@@ -24,7 +24,28 @@
         flex-grow:1;
         flex-shrink:1;
     }
+    .w-nowrap{
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
 
+        text-overflow: ellipsis;
+    }
+
+    .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
+        word-break: keep-all;
+        white-space: nowrap;
+        overflow: hidden;
+
+        flex-shrink:1;
+        text-overflow: ellipsis;
+    }
+    .w-wrap{
+        word-break: break-all !important;
+        white-space: normal !important;
+        overflow: hidden !important;
+        text-overflow: initial !important;
+    }
     .w-grid{
         position: relative;
         overflow: hidden;
@@ -50,6 +71,7 @@
             border-top:none;
             border-left:none;
             border-bottom:none;
+            padding:$unit;
         }
         .w-sort{
             position: relative;
@@ -72,7 +94,6 @@
         .w-head{
             flex-grow:1;
             flex-shrink:0;
-            flex-basis:30px;
             .w-cell{
                 border-bottom: solid 0px $bd-color;
             }
@@ -85,7 +106,6 @@
             background-color: $bg-color-solid;
             border-bottom:solid 1px $bd-color;
             .w-cell{
-                height:$unit * 5;
                 line-height: $unit * 5;
                 padding:0 $unit 0 $unit;
                 cursor:default;
@@ -125,27 +145,10 @@
                 flex-grow:1;
                 flex-shrink:1;
                 flex-basis:100px;
-                white-space: normal;
-                word-break:break-all;
 
-                padding:6px;
             }
         }
-        .w-nowrap{
-            word-break: keep-all;
-            white-space: nowrap;
-            overflow: hidden;
 
-            text-overflow: ellipsis;
-        }
-        .w-nowrap .w-row .w-cell,.w-nowrap.w-row .w-cell{
-            word-break: keep-all;
-            white-space: nowrap;
-            overflow: hidden;
-
-            flex-shrink:1;
-            text-overflow: ellipsis;
-        }
         button{
             padding:$unit;
             margin:$unit / 3;
