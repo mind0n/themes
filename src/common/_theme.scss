@@ -44,19 +44,6 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         margin:$unit;
         border-radius:$radius;
     }
-    .w-group{
-        .w-holder:nth-of-type(n) button, .button:nth-of-type(n){
-            border-radius: 0px;
-        }
-        .w-holder:nth-of-type(1) button, .button:nth-of-type(n){
-            border-top-left-radius: $radius;
-            border-bottom-left-radius: $radius;
-        }
-        .w-holder:nth-last-of-type(1) button, .button:nth-of-type(n){
-            border-top-right-radius: $radius;
-            border-bottom-right-radius: $radius;
-        }
-    }
     .w-default{
         color:$font-color;
         background-color: $bg-default-color;
@@ -69,7 +56,7 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         background-color:$bg-primary-hover-color;
         color:$fg-primary-color;
     }
-    .w-primary:active{
+    .w-primary:active, .w-primary:focus{
         background-color:$bg-primary-active-color;
         color:$fg-primary-color;
     }

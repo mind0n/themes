@@ -13,8 +13,27 @@
     button:hover{
         background-color: $bg-default-hover-color;
     }
-    button:active{
+    button:active, button:focus{
         background-color:$bg-default-active-color;
+    }
+    .w-group{
+        .w-holder:nth-of-type(n) button, button:nth-of-type(n){
+            border-radius: 0px;
+            border-left: solid 1px $bd-color;
+            border-right: solid 1px $bd-color-shadow;
+        }
+        .w-holder:nth-of-type(1) button, button:nth-of-type(1){
+            border-top-left-radius: $radius;
+            border-bottom-left-radius: $radius;
+            border-left: none;
+            border-right: solid 1px $bd-color-shadow;
+        }
+        .w-holder:nth-last-of-type(1) button, button:nth-of-type(1){
+            border-top-right-radius: $radius;
+            border-bottom-right-radius: $radius;
+            border-left: solid 1px $bd-color;
+            border-right: none;
+        }
     }
 }
 

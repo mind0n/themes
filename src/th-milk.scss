@@ -1,6 +1,7 @@
 // wo style entry point
 $theme: nb;
 $bd-color:#bbb;
+$bd-color-shadow:#000;
 
 $font-color: #eee;
 $fg-primary-color: #fff;
@@ -11,15 +12,15 @@ $bg-color-end:#29517c;
 $bg-color-solid:#3D709A;
 
 $bg-default-color:rgba(38,139,210, 0.7);
-$bg-default-hover-color:#415262;
-$bg-default-active-color:rgba(38,139,210, 0.6);
+$bg-default-hover-color:rgba(38,139,210, 0.3);
+$bg-default-active-color:#415262;
 
 $bg-widget-color:rgba(200,200,200,0.2);
 
 $bg-primary-color:rgba(62,205,116, 0.8);
-$bg-primary-hover-color:#415262;;
-$bg-primary-active-color:rgba(62,205,116, 0.6);
+$bg-primary-hover-color:rgba(62,205,116, 0.4);
+$bg-primary-active-color:#415262;;
 
-$bg-disabled-color:rgba(200,200,200,0.2);
+$bg-disabled-color:rgba(100,100,100,0.7);
 
 @import "common/_theme.scss";
