@@ -157,5 +157,10 @@
         button:hover{
             outline: solid 1px silver;
         }
+
+        .w-widget{
+            margin:0;
+            padding:$unit;
+        }
     }
 }
