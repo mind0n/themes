@@ -35,5 +35,23 @@
             border-right: none;
         }
     }
+
+    .w-upload{
+        position: relative;
+        input[type=file]{
+            visibility:hidden; 
+            width:0.1px;
+            height:0.1px;
+            opacity:0;
+        }
+
+        label div{
+            width:100%;
+            height:100%;
+            border:solid 1px $bd-color;
+            padding:$unit * 2;
+            text-align: center;
+        }
+    }
 }
 

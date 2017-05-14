@@ -38,10 +38,12 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         line-height: $unit * 3;
         margin-bottom: $unit*3;
     }
+    .w-boundary{
+        margin:$unit;
+    }
     .w-widget{
         background-color:$bg-widget-color;
         padding:$unit*2;
-        margin:$unit;
         border-radius:$radius;
     }
     .w-default{
