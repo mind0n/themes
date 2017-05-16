@@ -40,12 +40,6 @@
         flex-shrink:1;
         text-overflow: ellipsis;
     }
-    .w-wrap{
-        word-break: break-all !important;
-        white-space: normal !important;
-        overflow: hidden !important;
-        text-overflow: initial !important;
-    }
     .w-grid{
         position: relative;
         overflow: hidden;

@@ -13,8 +13,17 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
 #{$root}.#{$theme}, #{$root} .#{$theme}{
     svg, svg *{
         stroke: $font-color;
+    }
+    svg path, svg rect, svg ellipse{
+        fill: $font-color;
+    }
+    svg{
         width:32px;
         height:32px;
+    }
+    .preview, svg .preview{
+        width:128px;
+        height:128px;
     }
     .noselect {
         -webkit-touch-callout: none; /* iOS Safari */
@@ -41,6 +50,13 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
     .w-boundary{
         margin:$unit;
     }
+    .w-wrap{
+        word-break: break-all !important;
+        white-space: normal !important;
+        overflow: hidden !important;
+        text-overflow: initial !important;
+    }
+
     .w-widget{
         background-color:$bg-widget-color;
         padding:$unit*2;
