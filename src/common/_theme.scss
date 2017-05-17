@@ -36,6 +36,12 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
     .w-hidden{
         display:none;
     }
+    .w-invisible{
+        visibility:hidden; 
+        width:0.1px;
+        height:0.1px;
+        opacity:0;
+    }
     .w-holder{
         display:inline-block;
         border:none;
