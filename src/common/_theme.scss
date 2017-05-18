@@ -48,6 +48,9 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         margin:0;
         padding:0;
     }
+    .w-inline{
+        display:inline-block;
+    }
     .w-title{
         font:$font-title;
         line-height: $unit * 3;
