@@ -43,13 +43,15 @@ body#{$root}.#{$theme}, #{$root} body.#{$theme}{
         opacity:0;
     }
     .w-holder{
-        display:inline-block;
         border:none;
         margin:0;
         padding:0;
     }
     .w-inline{
         display:inline-block;
+    }
+    .w-center{
+        text-align: center;
     }
     .w-title{
         font:$font-title;
