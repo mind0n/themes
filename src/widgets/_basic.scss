@@ -16,22 +16,29 @@
     button:active, button:focus{
         background-color:$bg-default-active-color;
     }
+    .w-cmd{
+        button{
+            min-width:200px;
+            line-height: $unit*4;
+            margin:$unit*2 $unit;
+        }
+    }
     .w-group{
         .w-holder:nth-of-type(n) button, button:nth-of-type(n){
             border-radius: 0px;
-            border-left: solid 1px $bd-color;
-            border-right: solid 1px $bd-color-shadow;
+            border-left: solid 0px $bd-color;
+            border-right: solid 0px $bd-color-shadow;
         }
         .w-holder:nth-of-type(1) button, button:nth-of-type(1){
             border-top-left-radius: $radius;
             border-bottom-left-radius: $radius;
             border-left: none;
-            border-right: solid 1px $bd-color-shadow;
+            border-right: solid 0px $bd-color-shadow;
         }
         .w-holder:nth-last-of-type(1) button, button:nth-of-type(1){
             border-top-right-radius: $radius;
             border-bottom-right-radius: $radius;
-            border-left: solid 1px $bd-color;
+            border-left: solid 0px $bd-color;
             border-right: none;
         }
     }
@@ -39,10 +46,15 @@
     .w-upload{
         position: relative;
         input[type=file]{
+            position: absolute;
+            left:0;
+            top:0;
             visibility:hidden; 
             width:0.1px;
             height:0.1px;
             opacity:0;
+            margin:0;
+            padding:0;
         }
         label{
             text-align: center;
@@ -56,5 +68,11 @@
             text-align: center;
         }
     }
+
+    .preview, svg .preview{
+        max-width:128px;
+        max-height:128px;
+    }
+
 }
 
