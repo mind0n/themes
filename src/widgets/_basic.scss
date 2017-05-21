@@ -45,7 +45,7 @@
 
     .w-upload{
         position: relative;
-        input[type=file]{
+        input[type=file], .w-file{
             position: absolute;
             left:0;
             top:0;
@@ -69,9 +69,13 @@
         }
     }
 
-    .preview, svg .preview{
-        max-width:128px;
-        max-height:128px;
+    .preview{
+        max-width:$size-preview;
+        max-height:$size-preview;
+    }
+    svg.preview{
+        width:$size-preview;
+        height:$size-preview;
     }
 
 }
