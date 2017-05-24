@@ -42,7 +42,17 @@
             border-right: none;
         }
     }
-
+    .w-file{
+        position: absolute;
+        left:0;
+        top:0;
+        visibility:hidden; 
+        width:0.1px;
+        height:0.1px;
+        opacity:0;
+        margin:0;
+        padding:0;
+    }
     .w-upload{
         position: relative;
         input[type=file], .w-file{
