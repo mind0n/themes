@@ -80,12 +80,16 @@
     }
 
     .preview{
-        max-width:$size-preview;
-        max-height:$size-preview;
+        display: inline-block;
+        margin:$unit;
     }
-    svg.preview{
+    .preview, .preview svg{
         width:$size-preview;
         height:$size-preview;
+    }
+    .preview, .preview img{
+        max-width:$size-preview;
+        max-height:$size-preview;
     }
 
 }
