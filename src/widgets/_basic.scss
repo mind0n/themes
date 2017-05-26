@@ -78,11 +78,14 @@
             text-align: center;
         }
     }
-
+    .previews{
+        padding:$unit*2;
+    }
     .preview{
         display: inline-block;
         margin:$unit;
         text-align: center;
+        vertical-align: middle;
     }
     .preview, .preview svg{
         width:$size-preview;
@@ -92,6 +95,8 @@
         max-width:$size-preview;
         max-height:$size-preview;
     }
-
+    .preview *{
+        vertical-align: middle;
+    }
 }
 
